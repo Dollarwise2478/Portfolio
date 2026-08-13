@@ -1,69 +1,256 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
+    <main className="min-h-screen bg-zinc-950 text-white">
+      {/* Navbar */}
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+        <div className="text-xl font-bold">
+          <span className="text-blue-500">R</span>ichard.
+        </div>
+
+        <div className="hidden gap-8 text-sm text-zinc-400 md:flex">
+          <a href="#about" className="transition hover:text-white">
+            About
+          </a>
+          <a href="#skills" className="transition hover:text-white">
+            Skills
+          </a>
+          <a href="#projects" className="transition hover:text-white">
+            Projects
+          </a>
+          <a href="#contact" className="transition hover:text-white">
+            Contact
+          </a>
+        </div>
+
+        <a
+          href="#contact"
+          className="rounded-full border border-zinc-700 px-5 py-2 text-sm transition hover:border-blue-500 hover:text-blue-400"
+        >
+          Let's Talk
+        </a>
+      </nav>
+
+      {/* Hero */}
+      <section className="mx-auto flex min-h-[80vh] max-w-6xl items-center px-6 py-20">
+        <div className="max-w-4xl">
+          <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-blue-500">
+            Full-Stack Developer
+          </p>
+
+          <h1 className="text-5xl font-bold leading-tight tracking-tight sm:text-6xl md:text-7xl">
+            Building digital
+            <span className="block text-zinc-500">experiences that work.</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
+
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
+            I'm Richard, a Full-Stack TypeScript Developer focused on building
+            modern, scalable web applications with Next.js, Node.js, PostgreSQL,
+            and cloud technologies.
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href="#projects"
+              className="rounded-full bg-blue-600 px-6 py-3 font-medium transition hover:bg-blue-500"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
+              View My Work
+            </a>
+
             <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href="#contact"
+              className="rounded-full border border-zinc-700 px-6 py-3 font-medium transition hover:border-zinc-500"
             >
-              Learning
-            </a>{" "}
-            center.
+              Contact Me
+            </a>
+          </div>
+
+          <div className="mt-12 flex gap-6 text-sm text-zinc-500">
+            <span>Next.js</span>
+            <span>Node.js</span>
+            <span>TypeScript</span>
+            <span>PostgreSQL</span>
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section id="about" className="border-t border-zinc-900">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
+            About Me
+          </p>
+
+          <h2 className="text-3xl font-bold sm:text-4xl">
+            Turning ideas into useful products.
+          </h2>
+
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-zinc-400">
+            I enjoy solving real-world problems with software. From designing
+            APIs and databases to building responsive interfaces and deploying
+            applications to the cloud, I work across the full development stack.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
+      </section>
+
+      {/* Skills */}
+      <section id="skills" className="bg-zinc-900/40">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
+            Skills
+          </p>
+
+          <h2 className="text-3xl font-bold sm:text-4xl">
+            Technologies I work with
+          </h2>
+
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              "TypeScript",
+              "JavaScript",
+              "Next.js",
+              "React",
+              "Node.js",
+              "Express.js",
+              "PostgreSQL",
+              "MongoDB",
+              "Supabase",
+              "Redis",
+              "Docker",
+              "Git & GitHub",
+            ].map((skill) => (
+              <div
+                key={skill}
+                className="rounded-xl border border-zinc-800 bg-zinc-950 p-5 text-zinc-300 transition hover:border-blue-500/50 hover:text-white"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section id="projects">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
+            Selected Work
+          </p>
+
+          <h2 className="text-3xl font-bold sm:text-4xl">
+            Projects I've built
+          </h2>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <ProjectCard
+              title="TryBet"
+              description="A football prediction platform with prediction requests, leaderboards, rewards, automated match resolution, and a virtual wallet system."
+              technologies="Next.js · TypeScript · Express · PostgreSQL · Supabase"
+              link="https://trybet.com.ng"
             />
-            Deploy Now
-          </a>
+
+            <ProjectCard
+              title="SafeBoard"
+              description="A transport safety platform designed to help improve accountability and safety within the transportation ecosystem."
+              technologies="Next.js · Node.js · Express · Supabase"
+              link="https://safeboard.com.ng"
+            />
+
+            <ProjectCard
+              title="CrudApp"
+              description="A full-stack management dashboard for creating, updating, viewing, and managing records through a clean web interface."
+              technologies="Next.js · TypeScript · MongoDB"
+              link="#"
+            />
+
+            <ProjectCard
+              title="More Projects"
+              description="Explore more of my work, experiments, and open-source projects on GitHub."
+              technologies="GitHub · TypeScript · JavaScript"
+              link="https://github.com/Chekwasy"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="border-t border-zinc-900">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
+            Contact
+          </p>
+
+          <h2 className="max-w-2xl text-4xl font-bold sm:text-5xl">
+            Have a project in mind?
+          </h2>
+
+          <p className="mt-5 max-w-xl text-lg text-zinc-400">
+            I'm always open to discussing new projects, opportunities, and
+            interesting ideas.
+          </p>
+
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:your@email.com"
+            className="mt-8 inline-block rounded-full bg-white px-6 py-3 font-medium text-black transition hover:bg-zinc-200"
           >
-            Documentation
+            Get In Touch
           </a>
         </div>
-      </main>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-zinc-900">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-zinc-500 sm:flex-row sm:items-center sm:justify-between">
+          <p>© 2026 Richard. All rights reserved.</p>
+
+          <div className="flex gap-5">
+            <a
+              href="https://github.com/Chekwasy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition hover:text-white"
+            >
+              GitHub
+            </a>
+
+            <a href="#" className="transition hover:text-white">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  );
+}
+
+function ProjectCard({
+  title,
+  description,
+  technologies,
+  link,
+}: {
+  title: string;
+  description: string;
+  technologies: string;
+  link: string;
+}) {
+  return (
+    <div className="group rounded-2xl border border-zinc-800 bg-zinc-900/30 p-7 transition hover:-translate-y-1 hover:border-blue-500/40">
+      <div className="flex items-start justify-between gap-4">
+        <h3 className="text-2xl font-semibold">{title}</h3>
+
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-zinc-500 transition group-hover:text-blue-400"
+        >
+          ↗
+        </a>
+      </div>
+
+      <p className="mt-4 leading-7 text-zinc-400">{description}</p>
+
+      <p className="mt-6 text-sm text-blue-400">{technologies}</p>
     </div>
   );
 }
