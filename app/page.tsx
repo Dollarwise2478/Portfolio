@@ -1,484 +1,304 @@
-export default function Home() {
+export default function HRAnalyticsDashboard() {
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
-      {/* NAVBAR */}
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-        <div className="text-xl font-bold tracking-tight">
-          <span className="text-blue-500">D</span>avid Uwaga
-        </div>
 
-        <div className="hidden gap-8 text-sm text-zinc-400 md:flex">
-          <a href="#about" className="transition hover:text-white">
-            About
-          </a>
+      {/* HEADER */}
+      <section className="border-b border-zinc-900">
+        <div className="mx-auto max-w-6xl px-6 py-20">
 
-          <a href="#impact" className="transition hover:text-white">
-            Impact
-          </a>
+          <p className="text-sm uppercase tracking-[0.25em] text-blue-500">
+            People Analytics
+          </p>
 
-          <a href="#projects" className="transition hover:text-white">
-            Projects
-          </a>
+          <h1 className="mt-5 text-4xl font-bold sm:text-6xl">
+            HR Analytics Dashboard
+          </h1>
 
-          <a href="#expertise" className="transition hover:text-white">
-            Expertise
-          </a>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-zinc-400">
+            An Excel-based HR analytics dashboard developed to transform
+            workforce and recruitment data into meaningful insights that
+            support better HR reporting and decision-making.
+          </p>
 
-          <a href="#contact" className="transition hover:text-white">
-            Contact
-          </a>
-        </div>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <span className="rounded-full border border-zinc-700 px-4 py-2 text-sm text-zinc-300">
+              Microsoft Excel
+            </span>
 
-        <a
-          href="#contact"
-          className="rounded-full border border-zinc-700 px-5 py-2 text-sm transition hover:border-blue-500 hover:text-blue-400"
-        >
-          Let's Connect
-        </a>
-      </nav>
+            <span className="rounded-full border border-zinc-700 px-4 py-2 text-sm text-zinc-300">
+              PivotTables
+            </span>
 
-      {/* HERO */}
-      <section className="mx-auto flex min-h-[82vh] max-w-7xl items-center px-6 py-20">
-        <div className="grid w-full gap-16 md:grid-cols-[1.3fr_0.7fr] md:items-center">
-          
-          {/* HERO TEXT */}
-          <div>
-            <p className="mb-5 text-sm font-medium uppercase tracking-[0.3em] text-blue-500">
-              Human Resources • People • Operations
-            </p>
+            <span className="rounded-full border border-zinc-700 px-4 py-2 text-sm text-zinc-300">
+              HR Analytics
+            </span>
 
-            <h1 className="text-5xl font-bold leading-tight tracking-tight sm:text-6xl md:text-7xl">
-              Building better
-              <span className="block text-zinc-500">
-                workplaces through people,
-              </span>
-              processes & innovation.
-            </h1>
-
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-zinc-400">
-              I am David Uwaga, an HR professional focused on improving
-              employee experiences, strengthening HR operations, developing
-              effective people processes, and using technology and analytics
-              to solve workplace challenges.
-            </p>
-
-            <div className="mt-8 flex flex-wrap gap-4">
-              <a
-                href="#projects"
-                className="rounded-full bg-blue-600 px-7 py-3 font-medium transition hover:bg-blue-500"
-              >
-                Explore My Work
-              </a>
-
-              <a
-                href="#contact"
-                className="rounded-full border border-zinc-700 px-7 py-3 font-medium transition hover:border-zinc-500"
-              >
-                Let's Connect
-              </a>
-            </div>
-
-            <div className="mt-12 flex flex-wrap gap-6 text-sm text-zinc-500">
-              <span>HR Operations</span>
-              <span>People Management</span>
-              <span>HR Analytics</span>
-              <span>HR Technology</span>
-            </div>
+            <span className="rounded-full border border-zinc-700 px-4 py-2 text-sm text-zinc-300">
+              Data Visualisation
+            </span>
           </div>
 
-          {/* PROFILE IMAGE */}
-          <div className="hidden justify-center md:flex">
-            <div className="relative">
-              <div className="absolute -inset-4 rounded-3xl border border-blue-500/20 bg-blue-500/5" />
-
-              <div className="relative h-[480px] w-[370px] overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900">
-                <img
-                  src="/profile.jpg"
-                  alt="David Uwaga - Human Resources Professional"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
-      {/* PROFESSIONAL STATEMENT */}
-      <section className="border-y border-zinc-900 bg-zinc-900/40">
-        <div className="mx-auto max-w-5xl px-6 py-24 text-center">
-          <p className="text-2xl font-medium leading-relaxed text-zinc-200 sm:text-3xl">
-            "I believe that great HR is not measured by the policies we write,
-            but by the positive impact we create through people, processes,
-            and purposeful innovation."
+
+      {/* DASHBOARD IMAGE */}
+      <section>
+        <div className="mx-auto max-w-6xl px-6 py-16">
+
+          <div className="overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900 shadow-2xl">
+
+            <img
+              src="/projects/hr-analytics-dashboard.png"
+              alt="HR Analytics Dashboard"
+              className="w-full"
+            />
+
+          </div>
+
+          <p className="mt-4 text-center text-sm text-zinc-500">
+            HR Analytics Dashboard developed using Microsoft Excel
           </p>
+
         </div>
       </section>
 
-      {/* ABOUT */}
-      <section id="about" className="border-b border-zinc-900">
-        <div className="mx-auto max-w-7xl px-6 py-24">
-          <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
-            About Me
-          </p>
 
-          <div className="grid gap-12 md:grid-cols-2">
-            <div>
-              <h2 className="text-3xl font-bold sm:text-4xl">
-                HR with a practical and business-focused mindset.
+      {/* PROJECT OVERVIEW */}
+      <section className="border-t border-zinc-900">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+
+          <div className="grid gap-12 md:grid-cols-3">
+
+            <div className="md:col-span-1">
+              <p className="text-sm uppercase tracking-widest text-blue-500">
+                Project Overview
+              </p>
+
+              <h2 className="mt-3 text-3xl font-bold">
+                Turning HR data into insights.
               </h2>
             </div>
 
-            <div className="space-y-5 text-lg leading-8 text-zinc-400">
-              <p>
-                I am a Human Resources professional with experience across HR
-                operations, employee relations, recruitment, performance
-                management, policy development, employee engagement and
-                workplace administration.
+            <div className="md:col-span-2">
+
+              <p className="text-lg leading-8 text-zinc-400">
+                The project involved consolidating workforce and recruitment
+                data into an interactive Excel dashboard that allows HR
+                professionals and management to quickly understand key
+                workforce trends and patterns.
               </p>
 
-              <p>
-                My approach combines people-focused HR practice with
-                technology, data and process improvement. I look for
-                opportunities to simplify processes, improve accountability,
-                strengthen employee experiences and provide management with
-                better information for decision-making.
+              <p className="mt-5 text-lg leading-8 text-zinc-400">
+                The dashboard brings different HR metrics together in one
+                interface, making it easier to analyse workforce composition,
+                recruitment trends, salary information and departmental data.
               </p>
 
-              <p>
-                This portfolio showcases selected projects and initiatives
-                that demonstrate how I approach HR challenges and translate
-                them into practical, measurable solutions.
-              </p>
             </div>
+
           </div>
+
         </div>
       </section>
 
-      {/* IMPACT */}
-      <section id="impact" className="bg-zinc-900/40">
-        <div className="mx-auto max-w-7xl px-6 py-24">
-          <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
-            My Impact
+
+      {/* BUSINESS CHALLENGE */}
+      <section className="bg-zinc-900/40">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+
+          <p className="text-sm uppercase tracking-widest text-blue-500">
+            The Challenge
           </p>
 
-          <h2 className="text-3xl font-bold sm:text-4xl">
-            What I bring to HR.
+          <h2 className="mt-3 text-3xl font-bold">
+            Moving from raw data to actionable information.
           </h2>
 
-          <p className="mt-5 max-w-2xl text-zinc-400">
-            Selected areas where I have contributed to improving people,
-            processes, systems and organisational effectiveness.
+          <p className="mt-6 max-w-4xl text-lg leading-8 text-zinc-400">
+            HR data can become difficult to interpret when information is
+            spread across different records and reports. This makes it
+            challenging to quickly identify workforce trends, compare
+            departments and generate meaningful management insights.
           </p>
 
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <p className="mt-5 max-w-4xl text-lg leading-8 text-zinc-400">
+            The objective of this project was therefore to create a simple,
+            interactive and visually engaging dashboard that could turn raw
+            HR data into information that supports faster reporting and
+            evidence-based decision-making.
+          </p>
+
+        </div>
+      </section>
+
+
+      {/* MY APPROACH */}
+      <section>
+        <div className="mx-auto max-w-6xl px-6 py-20">
+
+          <p className="text-sm uppercase tracking-widest text-blue-500">
+            My Approach
+          </p>
+
+          <h2 className="mt-3 text-3xl font-bold">
+            How I developed the solution.
+          </h2>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+
             {[
-              {
-                number: "01",
-                title: "HR Digital Transformation",
-                text: "Led initiatives to improve HR operations through digital workflows, HR systems and process automation.",
-              },
-              {
-                number: "02",
-                title: "HR Policies & Governance",
-                text: "Developed and reviewed HR policies, SOPs and governance frameworks to promote consistency and accountability.",
-              },
-              {
-                number: "03",
-                title: "Performance Management",
-                text: "Improved appraisal processes through structured scoring frameworks, performance tracking and automation initiatives.",
-              },
-              {
-                number: "04",
-                title: "Internal Communication",
-                text: "Redesigned HR communication through professional newsletters and employee-focused HR Corner initiatives.",
-              },
-              {
-                number: "05",
-                title: "HR Technology",
-                text: "Improved HR administration through tools such as BrightHR, digital workflows and attendance management systems.",
-              },
-              {
-                number: "06",
-                title: "HR Analytics",
-                text: "Developed HR dashboards and reports to support workforce analysis and management decision-making.",
-              },
-            ].map((item) => (
+              "Cleaned and organised the HR dataset.",
+              "Structured the data for analysis.",
+              "Used PivotTables to summarise workforce information.",
+              "Created interactive charts and visualisations.",
+              "Used slicers to enable dynamic filtering.",
+              "Developed key HR metrics for management reporting.",
+            ].map((item, index) => (
               <div
-                key={item.number}
-                className="rounded-2xl border border-zinc-800 bg-zinc-950 p-7 transition hover:-translate-y-1 hover:border-blue-500/40"
+                key={index}
+                className="rounded-xl border border-zinc-800 bg-zinc-900/30 p-6"
               >
                 <span className="text-sm font-semibold text-blue-500">
-                  {item.number}
+                  0{index + 1}
                 </span>
 
-                <h3 className="mt-5 text-xl font-semibold">
-                  {item.title}
-                </h3>
-
-                <p className="mt-4 leading-7 text-zinc-400">
-                  {item.text}
+                <p className="mt-3 text-zinc-300">
+                  {item}
                 </p>
               </div>
             ))}
+
           </div>
+
         </div>
       </section>
 
-      {/* PROJECTS */}
-      <section id="projects">
-        <div className="mx-auto max-w-7xl px-6 py-24">
-          <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
-            Selected Work
+
+      {/* KEY INSIGHTS */}
+      <section className="bg-zinc-900/40">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+
+          <p className="text-sm uppercase tracking-widest text-blue-500">
+            Key Insights
           </p>
 
-          <h2 className="text-3xl font-bold sm:text-4xl">
-            Projects & HR Initiatives
+          <h2 className="mt-3 text-3xl font-bold">
+            What the dashboard helps reveal.
           </h2>
 
-          <p className="mt-5 max-w-2xl text-zinc-400">
-            A selection of projects demonstrating my approach to HR
-            transformation, process improvement, analytics and employee
-            experience.
-          </p>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
 
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
-            
-            <ProjectCard
-              number="01"
-              title="HR Digital Transformation"
-              category="HR Technology & Operations"
-              description="A practical HR transformation initiative focused on reducing manual processes, improving employee records, streamlining attendance and leave administration, and creating more efficient digital workflows."
-              technologies="BrightHR · Digital Workflows · HR Systems · Process Improvement"
+            <Insight
+              title="Workforce Demographics"
+              text="Provides visibility into employee demographics and workforce composition."
             />
 
-            <ProjectCard
-              number="02"
-              title="Performance Appraisal Framework"
-              category="Performance Management"
-              description="Redesigned appraisal processes and scoring frameworks to improve consistency, transparency and accuracy in employee performance evaluation."
-              technologies="Performance Management · Excel · Scoring Frameworks · Process Automation"
+            <Insight
+              title="Departmental Analysis"
+              text="Allows workforce information to be reviewed across different departments and functions."
             />
 
-            <ProjectCard
-              number="03"
-              title="HR Analytics Dashboard"
-              category="People Analytics"
-              description="Developed an HR analytics dashboard to transform workforce data into meaningful insights covering employee demographics, departments, positions, salaries and recruitment trends."
-              technologies="Power BI · Excel · Data Analytics · HR Metrics"
+            <Insight
+              title="Salary Analysis"
+              text="Provides visibility into salary distribution and workforce compensation patterns."
             />
 
-            <ProjectCard
-              number="04"
-              title="HR Policies & Governance Framework"
-              category="HR Governance"
-              description="Developed and reviewed workplace policies, procedures and governance documents covering areas such as equal opportunities, grievance management, attendance, background checks and employee conduct."
-              technologies="Policy Development · SOPs · Governance · Employee Relations"
+            <Insight
+              title="Recruitment Trends"
+              text="Helps analyse recruitment activity, sources and workforce hiring patterns."
             />
 
-            <ProjectCard
-              number="05"
-              title="HR Corner & Employee Communication"
-              category="Employee Engagement"
-              description="Created professional HR Corner communications to educate employees on workplace policies, procedures, compliance requirements and important HR practices."
-              technologies="Internal Communication · Employee Engagement · HR Communications"
-            />
-
-            <ProjectCard
-              number="06"
-              title="Onboarding & Training Programme"
-              category="Learning & Development"
-              description="Supported the structure and administration of employee onboarding and intensive training programmes designed to help new employees transition effectively into their roles."
-              technologies="Onboarding · Training · Employee Development · HR Operations"
-            />
           </div>
+
         </div>
       </section>
 
-      {/* EXPERTISE */}
-      <section id="expertise" className="bg-zinc-900/40">
-        <div className="mx-auto max-w-7xl px-6 py-24">
-          <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
-            Areas of Expertise
+
+      {/* OUTCOME */}
+      <section>
+        <div className="mx-auto max-w-6xl px-6 py-20">
+
+          <p className="text-sm uppercase tracking-widest text-blue-500">
+            Outcome
           </p>
 
-          <h2 className="text-3xl font-bold sm:text-4xl">
-            Where people and business meet.
+          <h2 className="mt-3 text-3xl font-bold">
+            A clearer view of workforce data.
           </h2>
 
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <p className="mt-6 max-w-4xl text-lg leading-8 text-zinc-400">
+            The dashboard provides a centralised and visual way of reviewing
+            workforce information, improving visibility and reducing the time
+            required to interpret HR data manually.
+          </p>
+
+          <p className="mt-5 max-w-4xl text-lg leading-8 text-zinc-400">
+            More importantly, the project demonstrates how HR professionals
+            can use data and technology to move beyond administrative
+            reporting and support evidence-based decision-making.
+          </p>
+
+        </div>
+      </section>
+
+
+      {/* SKILLS */}
+      <section className="border-t border-zinc-900">
+        <div className="mx-auto max-w-6xl px-6 py-16">
+
+          <p className="text-sm uppercase tracking-widest text-blue-500">
+            Skills Demonstrated
+          </p>
+
+          <div className="mt-6 flex flex-wrap gap-3">
+
             {[
-              "HR Operations",
-              "Employee Relations",
-              "Performance Management",
               "HR Analytics",
-              "Policy Development",
-              "Recruitment & Selection",
-              "People Management",
+              "Data Analysis",
+              "Microsoft Excel",
+              "PivotTables",
+              "Data Visualisation",
+              "HR Reporting",
+              "Problem Solving",
               "Process Improvement",
-              "HR Technology",
-              "Employee Engagement",
-              "Workforce Administration",
-              "Training & Development",
             ].map((skill) => (
-              <div
+              <span
                 key={skill}
-                className="rounded-xl border border-zinc-800 bg-zinc-950 p-5 text-zinc-300 transition hover:border-blue-500/50 hover:text-white"
+                className="rounded-full border border-zinc-700 px-4 py-2 text-sm text-zinc-300"
               >
                 {skill}
-              </div>
+              </span>
             ))}
+
           </div>
+
         </div>
       </section>
 
-      {/* EXPERIENCE */}
-      <section className="border-b border-zinc-900">
-        <div className="mx-auto max-w-7xl px-6 py-24">
-          <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
-            Professional Focus
-          </p>
-
-          <h2 className="text-3xl font-bold sm:text-4xl">
-            Turning HR challenges into practical solutions.
-          </h2>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            <div className="border-l border-blue-500 pl-6">
-              <h3 className="text-xl font-semibold">People</h3>
-              <p className="mt-3 leading-7 text-zinc-400">
-                Building employee experiences, supporting managers and
-                strengthening workplace relationships.
-              </p>
-            </div>
-
-            <div className="border-l border-blue-500 pl-6">
-              <h3 className="text-xl font-semibold">Processes</h3>
-              <p className="mt-3 leading-7 text-zinc-400">
-                Creating structured systems, policies and workflows that make
-                HR operations more consistent and efficient.
-              </p>
-            </div>
-
-            <div className="border-l border-blue-500 pl-6">
-              <h3 className="text-xl font-semibold">Innovation</h3>
-              <p className="mt-3 leading-7 text-zinc-400">
-                Using technology, analytics and automation to improve how HR
-                teams work and make decisions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section id="contact">
-        <div className="mx-auto max-w-7xl px-6 py-28">
-          <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
-            Let's Connect
-          </p>
-
-          <h2 className="max-w-3xl text-4xl font-bold sm:text-5xl">
-            Let's build better workplaces together.
-          </h2>
-
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-400">
-            I am open to conversations around HR leadership, people
-            operations, HR transformation, analytics and opportunities where
-            I can create meaningful organisational impact.
-          </p>
-
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="mailto:your@email.com"
-              className="rounded-full bg-white px-7 py-3 font-medium text-black transition hover:bg-zinc-200"
-            >
-              Email Me
-            </a>
-
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full border border-zinc-700 px-7 py-3 font-medium transition hover:border-zinc-500"
-            >
-              LinkedIn
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* FOOTER */}
-      <footer className="border-t border-zinc-900">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-zinc-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 David Uwaga. All rights reserved.</p>
-
-          <div className="flex gap-5">
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition hover:text-white"
-            >
-              LinkedIn
-            </a>
-
-            <a
-              href="#"
-              className="transition hover:text-white"
-            >
-              Download CV
-            </a>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }
 
-/* PROJECT CARD */
 
-function ProjectCard({
-  number,
+function Insight({
   title,
-  category,
-  description,
-  technologies,
+  text,
 }: {
-  number: string;
   title: string;
-  category: string;
-  description: string;
-  technologies: string;
+  text: string;
 }) {
   return (
-    <article className="group rounded-2xl border border-zinc-800 bg-zinc-900/30 p-8 transition hover:-translate-y-1 hover:border-blue-500/40">
-      <div className="flex items-start justify-between gap-4">
-        <div>
-          <span className="text-sm font-semibold text-blue-500">
-            {number}
-          </span>
+    <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-7">
 
-          <p className="mt-4 text-xs font-medium uppercase tracking-wider text-zinc-500">
-            {category}
-          </p>
-        </div>
-
-        <span className="text-xl text-zinc-600 transition group-hover:text-blue-400">
-          ↗
-        </span>
-      </div>
-
-      <h3 className="mt-6 text-2xl font-semibold">
+      <h3 className="text-xl font-semibold">
         {title}
       </h3>
 
-      <p className="mt-4 leading-7 text-zinc-400">
-        {description}
+      <p className="mt-3 leading-7 text-zinc-400">
+        {text}
       </p>
 
-      <p className="mt-6 text-sm leading-6 text-blue-400">
-        {technologies}
-      </p>
-    </article>
+    </div>
   );
 }
