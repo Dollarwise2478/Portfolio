@@ -59,31 +59,31 @@ export default function Home() {
             employee experience and organisational effectiveness.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="#projects"
-              className="rounded-full bg-blue-600 px-6 py-3 font-medium transition hover:bg-blue-500"
-            >
-              View My Work
-            </a>
+     <div className="mt-8 flex flex-wrap gap-4">
+  <a
+    href="#projects"
+    className="rounded-full bg-blue-600 px-6 py-3 font-medium transition hover:bg-blue-500"
+  >
+    View My Work
+  </a>
 
-            <a
-              href="/David-Uwaga-Chigaemezu-ACIPM-HRPL.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full border border-zinc-700 px-6 py-3 font-medium transition hover:border-zinc-500"
-            >
-              View CV
-            </a>
+  <a
+    href="https://www.linkedin.com/in/chigaemezu-uwaga-acipm-hrpl-4091bb176"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-full border border-zinc-700 px-6 py-3 font-medium transition hover:border-blue-500 hover:text-blue-400"
+  >
+    My LinkedIn
+  </a>
 
-            <a
-              href="/David-Uwaga-Chigaemezu-ACIPM-HRPL.pdf"
-              download
-              className="rounded-full border border-zinc-700 px-6 py-3 font-medium transition hover:border-blue-500 hover:text-blue-400"
-            >
-              Download CV
-            </a>
-          </div>
+  <a
+    href="/David-Uwaga-Chigaemezu-ACIPM-HRPL.pdf"
+    download
+    className="rounded-full border border-zinc-700 px-6 py-3 font-medium transition hover:border-blue-500 hover:text-blue-400"
+  >
+    Download CV
+  </a>
+</div>
 
           <div className="mt-12 flex flex-wrap gap-6 text-sm text-zinc-500">
             <span>HR Management</span>
