@@ -348,7 +348,7 @@ export default function Home() {
           <div>
             <p className="text-white">David Uwaga</p>
 
-            <p className="mt-1 text-blue-500">ACIP · HRPL</p>
+            <p className="mt-1 text-blue-500">ACIPM · HRPL</p>
           </div>
 
           <div className="flex gap-5">
