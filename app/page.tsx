@@ -12,7 +12,7 @@ export default function Home() {
           </div>
 
           <div className="mt-1 text-xs font-medium tracking-wider text-blue-500">
-            ACIPM · HRPL
+            ACIP · HRPL
           </div>
         </div>
 
@@ -249,97 +249,105 @@ export default function Home() {
       </section>
 
 
-     {/* PROJECTS */}
-<section id="projects" className="bg-zinc-950">
-  <div className="mx-auto max-w-7xl px-6 py-24">
+      {/* PROJECTS */}
+      <section id="projects">
 
-    <div className="mb-12">
-      <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
-        Selected Work
-      </p>
+        <div className="mx-auto max-w-7xl px-6 py-24">
 
-      <h2 className="text-3xl font-bold text-white sm:text-4xl">
-        Projects & HR Initiatives
-      </h2>
+          <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
+            Selected Work
+          </p>
 
-      <p className="mt-5 max-w-3xl text-zinc-400 leading-relaxed">
-        A selection of HR projects demonstrating my experience in people
-        analytics, performance management, HR technology, process improvement,
-        employee communication and organisational effectiveness.
-      </p>
-    </div>
+          <h2 className="text-3xl font-bold sm:text-4xl">
+            Projects & HR Initiatives
+          </h2>
 
-    <div className="grid gap-8 md:grid-cols-2">
+          <p className="mt-5 max-w-2xl text-zinc-400">
+            A selection of HR projects demonstrating my approach to people
+            analytics, process improvement, HR technology and organisational
+            effectiveness.
+          </p>
 
-      {/* PROJECT 01 */}
-      <ProjectCard
-        image="/hr-analytics-dashboard.png"
-        number="01"
-        title="HR Analytics Dashboard"
-        category="People Analytics"
-        description="Developed an HR analytics dashboard to transform workforce and recruitment data into meaningful insights covering employee demographics, departments, positions, salaries and recruitment trends."
-        technologies="Power BI · Excel · Data Analytics · HR Metrics"
-        link="/projects/hr-analytics-dashboard"
-      />
 
-      {/* PROJECT 02 */}
-      <ProjectCard
-        image="/performance-appraisal.png"
-        number="02"
-        title="Performance Appraisal Framework"
-        category="Performance Management"
-        description="Developed a structured performance appraisal and scoring framework designed to improve consistency, transparency and accuracy in employee performance evaluation and support evidence-based performance decisions."
-        technologies="Excel · Performance Management · Scoring Framework · HR Analytics"
-        link="/projects/performance-appraisal"
-      />
+          {/* PROJECT GRID */}
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
 
-      {/* PROJECT 03 */}
-      <ProjectCard
-        image="/hr-automation.png"
-        number="03"
-        title="HR Process Improvement & Digital Transformation"
-        category="HR Technology"
-        description="Designed and implemented process improvement initiatives aimed at reducing manual HR administration and improving the management of attendance, leave, employee records and other core HR processes."
-        technologies="BrightHR · HR Systems · Process Improvement · Automation"
-        link="/projects/hr-digital-transformation"
-      />
 
-      {/* PROJECT 04 */}
-      <ProjectCard
-        image="/hr-policy-workspace.png"
-        number="04"
-        title="HR Policies & Governance"
-        category="HR Governance"
-        description="Developed and reviewed HR policies, procedures and standard operating processes to strengthen consistency, accountability, compliance and employee understanding across the organisation."
-        technologies="Policy Development · SOPs · HR Governance · Compliance"
-        link="/projects/hr-policies"
-      />
+            {/* PROJECT 01 - HR ANALYTICS */}
+            <ProjectCard
+              image="/hr-analytics-dashboard.png"
+              number="01"
+              title="HR Analytics Dashboard"
+              category="People Analytics"
+              description="An Excel-based HR analytics dashboard developed to transform workforce and recruitment data into meaningful insights for better HR decision-making."
+              technologies="Microsoft Excel · PivotTables · Charts · HR Analytics"
+              link="#"
+            />
 
-      {/* PROJECT 05 */}
-      <ProjectCard
-        image="/hr-corner-newsletter.png"
-        number="05"
-        title="HR Corner & Employee Communication"
-        category="Employee Engagement"
-        description="Created and developed the HR Corner initiative as a structured internal communication platform for educating employees on workplace policies, HR practices, professional conduct and organisational updates."
-        technologies="HR Communication · Employee Engagement · Internal Communication"
-        link="/projects/hr-corner"
-      />
 
-      {/* PROJECT 06 */}
-      <ProjectCard
-        image="/organisational-structure.png"
-        number="06"
-        title="Organisational Structure & HR Documentation"
-        category="Organisational Effectiveness"
-        description="Supported the development and presentation of organisational structures and HR documentation to improve clarity around reporting relationships, responsibilities and organisational effectiveness."
-        technologies="Organisation Design · HR Documentation · Visual Communication"
-        link="/projects/organisational-structure"
-      />
+            {/* PROJECT 02 - PERFORMANCE APPRAISAL */}
+            <ProjectCard
+              image="/appraisal-framework.png"
+              number="02"
+              title="Performance Appraisal Framework"
+              category="Performance Management"
+              description="A structured appraisal and scoring framework designed to improve consistency, transparency and accuracy in employee performance evaluation."
+              technologies="Excel · Performance Management · Scoring Framework"
+              link="#"
+            />
 
-    </div>
-  </div>
-</section>
+
+            {/* PROJECT 03 - HR DIGITAL TRANSFORMATION */}
+            <ProjectCard
+              image="/hr-digital-transformation.png"
+              number="03"
+              title="HR Digital Transformation"
+              category="HR Technology"
+              description="A process improvement initiative focused on reducing manual HR administration and improving attendance, leave and employee record management through HR technology."
+              technologies="BrightHR · HR Systems · Process Improvement"
+              link="#"
+            />
+
+
+            {/* PROJECT 04 - HR POLICIES */}
+            <ProjectCard
+              image="/hr-policies.png"
+              number="04"
+              title="HR Policies & Governance"
+              category="HR Governance"
+              description="Development and review of HR policies, procedures and organisational structures designed to strengthen consistency, accountability and employee understanding."
+              technologies="Policy Development · SOPs · Governance"
+              link="#"
+            />
+
+
+            {/* PROJECT 05 - HR CORNER */}
+            <ProjectCard
+              image="/hr-corner.png"
+              number="05"
+              title="HR Corner & Employee Communication"
+              category="Employee Engagement"
+              description="A structured internal HR communication initiative designed to educate employees on workplace policies, procedures and important HR practices."
+              technologies="HR Communication · Employee Engagement"
+              link="#"
+            />
+
+
+            {/* PROJECT 06 - ONBOARDING & TRAINING */}
+            <ProjectCard
+              image="/onboarding-training.png"
+              number="06"
+              title="Onboarding & Training Programme"
+              category="Learning & Development"
+              description="A structured onboarding and training approach designed to support new employees through their transition, development and integration into the organisation."
+              technologies="Onboarding · Training · Employee Development"
+              link="#"
+            />
+
+          </div>
+        </div>
+      </section>
+
 
       {/* EXPERTISE */}
       <section id="expertise" className="bg-zinc-900/40">
