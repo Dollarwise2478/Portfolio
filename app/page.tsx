@@ -12,7 +12,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-1 text-sm font-medium text-blue-500">
-            ACIP · HRPL
+            ACIPM · HRPL
           </p>
         </div>
 
