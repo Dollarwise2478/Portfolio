@@ -3,7 +3,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
-
       {/* ================= NAVBAR ================= */}
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
         <div>
@@ -11,37 +10,23 @@ export default function Home() {
             David Uwaga
           </h1>
 
-          <p className="mt-1 text-sm font-medium text-blue-500">
-            ACIPM · HRPL
-          </p>
+          <p className="mt-1 text-sm font-medium text-blue-500">ACIPM · HRPL</p>
         </div>
 
         <div className="hidden gap-8 text-sm text-zinc-400 md:flex">
-          <a
-            href="#about"
-            className="transition hover:text-white"
-          >
+          <a href="#about" className="transition hover:text-white">
             About
           </a>
 
-          <a
-            href="#skills"
-            className="transition hover:text-white"
-          >
+          <a href="#skills" className="transition hover:text-white">
             Skills
           </a>
 
-          <a
-            href="#projects"
-            className="transition hover:text-white"
-          >
+          <a href="#projects" className="transition hover:text-white">
             Projects
           </a>
 
-          <a
-            href="#contact"
-            className="transition hover:text-white"
-          >
+          <a href="#contact" className="transition hover:text-white">
             Contact
           </a>
         </div>
@@ -54,32 +39,27 @@ export default function Home() {
         </a>
       </nav>
 
-
       {/* ================= HERO ================= */}
       <section className="mx-auto flex min-h-[80vh] max-w-7xl items-center px-6 py-20">
         <div className="max-w-4xl">
-
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-blue-500">
             Human Resources Professional
           </p>
 
           <h2 className="text-5xl font-bold leading-tight tracking-tight sm:text-6xl md:text-7xl">
             Building better
-            <span className="block text-zinc-500">
-              people and HR systems.
-            </span>
+            <span className="block text-zinc-500">people and HR systems.</span>
           </h2>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-zinc-400">
             I am David Uwaga, an HR professional focused on people management,
             HR analytics, performance management, HR technology, employee
             engagement and process improvement. I combine HR expertise with
-            data-driven thinking to create practical solutions that improve
-            both employee experience and organisational effectiveness.
+            data-driven thinking to create practical solutions that improve both
+            employee experience and organisational effectiveness.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-
             <a
               href="#projects"
               className="rounded-full bg-blue-600 px-6 py-3 font-medium transition hover:bg-blue-500"
@@ -103,7 +83,6 @@ export default function Home() {
             >
               Download CV
             </a>
-
           </div>
 
           <div className="mt-12 flex flex-wrap gap-6 text-sm text-zinc-500">
@@ -113,18 +92,12 @@ export default function Home() {
             <span>HR Technology</span>
             <span>Employee Engagement</span>
           </div>
-
         </div>
       </section>
 
-
       {/* ================= ABOUT ================= */}
-      <section
-        id="about"
-        className="border-t border-zinc-900"
-      >
+      <section id="about" className="border-t border-zinc-900">
         <div className="mx-auto max-w-7xl px-6 py-24">
-
           <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
             About Me
           </p>
@@ -134,30 +107,23 @@ export default function Home() {
           </h2>
 
           <p className="mt-6 max-w-4xl text-lg leading-8 text-zinc-400">
-            My approach to Human Resources goes beyond administrative
-            processes. I focus on building structured HR systems, improving
-            employee experience, supporting management decision-making and
-            using data to identify opportunities for improvement.
+            My approach to Human Resources goes beyond administrative processes.
+            I focus on building structured HR systems, improving employee
+            experience, supporting management decision-making and using data to
+            identify opportunities for improvement.
           </p>
 
           <p className="mt-5 max-w-4xl text-lg leading-8 text-zinc-400">
             My experience covers employee and salary management, recruitment,
-            onboarding, performance appraisal, HR policies, attendance and
-            leave management, employee communication, training and HR
-            analytics.
+            onboarding, performance appraisal, HR policies, attendance and leave
+            management, employee communication, training and HR analytics.
           </p>
-
         </div>
       </section>
 
-
       {/* ================= SKILLS ================= */}
-      <section
-        id="skills"
-        className="bg-zinc-900/40"
-      >
+      <section id="skills" className="bg-zinc-900/40">
         <div className="mx-auto max-w-7xl px-6 py-24">
-
           <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
             Core Competencies
           </p>
@@ -167,7 +133,6 @@ export default function Home() {
           </h2>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-
             {[
               "HR Management",
               "People Analytics",
@@ -189,17 +154,13 @@ export default function Home() {
                 {skill}
               </div>
             ))}
-
           </div>
         </div>
       </section>
 
-
       {/* ================= PROJECTS ================= */}
       <section id="projects">
-
         <div className="mx-auto max-w-7xl px-6 py-24">
-
           <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
             Selected Work
           </p>
@@ -214,13 +175,10 @@ export default function Home() {
             communication, organisational design and process improvement.
           </p>
 
-
           <div className="mt-12 grid gap-8 md:grid-cols-2">
-
-
             {/* ================= PROJECT 01 ================= */}
             <ProjectCard
-              image="/HR Analytics Dashboard.png"
+              image="/HR-Analytics-Dashboard.png"
               number="01"
               title="HR Analytics Dashboard"
               category="People Analytics"
@@ -228,7 +186,6 @@ export default function Home() {
               technologies="Excel · PivotTables · Charts · Slicers · HR Analytics"
               link="#"
             />
-
 
             {/* ================= PROJECT 02 ================= */}
             <ProjectCard
@@ -239,7 +196,6 @@ export default function Home() {
               technologies="Excel · Performance Management · Scoring Framework"
               link="#"
             />
-
 
             {/* ================= PROJECT 03 ================= */}
             <ProjectCard
@@ -252,9 +208,9 @@ export default function Home() {
               link="#"
             />
 
-
             {/* ================= PROJECT 04 ================= */}
             <ProjectCard
+              image="/hr-policies.jpg"
               number="04"
               title="HR Policies & Governance"
               category="HR Governance"
@@ -262,7 +218,6 @@ export default function Home() {
               technologies="Policy Development · SOPs · Governance · Compliance"
               link="#"
             />
-
 
             {/* ================= PROJECT 05 ================= */}
             <ProjectCard
@@ -274,7 +229,6 @@ export default function Home() {
               link="#"
             />
 
-
             {/* ================= PROJECT 06 ================= */}
             <ProjectCard
               number="06"
@@ -284,7 +238,6 @@ export default function Home() {
               technologies="Onboarding · Training · Employee Development"
               link="#"
             />
-
 
             {/* ================= PROJECT 07 ================= */}
             <ProjectCard
@@ -297,10 +250,9 @@ export default function Home() {
               link="#"
             />
 
-
             {/* ================= PROJECT 08 ================= */}
             <ProjectCard
-              image="/Organogram Design.png"
+              image="/Organogram-Design.png"
               number="08"
               title="Organisational Structure & Organogram Design"
               category="Organisation Design"
@@ -308,17 +260,13 @@ export default function Home() {
               technologies="Organisation Design · Organisational Structure · Visual Communication"
               link="#"
             />
-
           </div>
         </div>
       </section>
 
-
       {/* ================= EXPERIENCE ================= */}
       <section className="border-t border-zinc-900 bg-zinc-900/30">
-
         <div className="mx-auto max-w-7xl px-6 py-24">
-
           <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
             Professional Focus
           </p>
@@ -328,7 +276,6 @@ export default function Home() {
           </h2>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-
             <InfoCard
               title="People Management"
               description="Supporting employees throughout the employee lifecycle while maintaining effective HR processes, communication and employee relations."
@@ -343,21 +290,13 @@ export default function Home() {
               title="HR Process Improvement"
               description="Identifying gaps in existing HR processes and developing practical systems, policies and technology-driven solutions."
             />
-
           </div>
-
         </div>
       </section>
 
-
       {/* ================= CONTACT ================= */}
-      <section
-        id="contact"
-        className="border-t border-zinc-900"
-      >
-
+      <section id="contact" className="border-t border-zinc-900">
         <div className="mx-auto max-w-7xl px-6 py-24">
-
           <p className="mb-3 text-sm uppercase tracking-widest text-blue-500">
             Contact
           </p>
@@ -368,12 +307,11 @@ export default function Home() {
 
           <p className="mt-5 max-w-2xl text-lg text-zinc-400">
             I am open to HR opportunities, collaborations, consulting
-            engagements and conversations around people management,
-            HR analytics and organisational effectiveness.
+            engagements and conversations around people management, HR analytics
+            and organisational effectiveness.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
-
             <a
               href="mailto:your@email.com"
               className="rounded-full bg-blue-600 px-6 py-3 font-medium text-white transition hover:bg-blue-500"
@@ -389,42 +327,25 @@ export default function Home() {
             >
               View CV
             </a>
-
           </div>
-
         </div>
-
       </section>
-
 
       {/* ================= FOOTER ================= */}
       <footer className="border-t border-zinc-900">
-
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-zinc-500 sm:flex-row sm:items-center sm:justify-between">
-
           <div>
-            <p className="text-white">
-              David Uwaga
-            </p>
+            <p className="text-white">David Uwaga</p>
 
-            <p className="mt-1 text-blue-500">
-              ACIP · HRPL
-            </p>
+            <p className="mt-1 text-blue-500">ACIP · HRPL</p>
           </div>
 
           <div className="flex gap-5">
-
-            <a
-              href="#about"
-              className="transition hover:text-white"
-            >
+            <a href="#about" className="transition hover:text-white">
               About
             </a>
 
-            <a
-              href="#projects"
-              className="transition hover:text-white"
-            >
+            <a href="#projects" className="transition hover:text-white">
               Projects
             </a>
 
@@ -436,21 +357,14 @@ export default function Home() {
             >
               CV
             </a>
-
           </div>
 
-          <p>
-            © 2026 David Uwaga. All rights reserved.
-          </p>
-
+          <p>© 2026 David Uwaga. All rights reserved.</p>
         </div>
-
       </footer>
-
     </main>
   );
 }
-
 
 /* ========================================================= */
 /* PROJECT CARD                                               */
@@ -475,11 +389,9 @@ function ProjectCard({
 }) {
   return (
     <div className="group overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900/40 transition duration-300 hover:-translate-y-1 hover:border-blue-500/40">
-
       {/* IMAGE */}
       {image ? (
         <div className="relative h-64 w-full overflow-hidden border-b border-zinc-800 bg-zinc-950">
-
           <Image
             src={image}
             alt={title}
@@ -487,60 +399,36 @@ function ProjectCard({
             className="object-cover object-top transition duration-500 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
-
         </div>
       ) : (
         <div className="flex h-40 items-center justify-center border-b border-zinc-800 bg-zinc-950">
-
           <div className="text-center">
-
-            <p className="text-4xl font-bold text-zinc-800">
-              {number}
-            </p>
+            <p className="text-4xl font-bold text-zinc-800">{number}</p>
 
             <p className="mt-2 text-xs uppercase tracking-[0.25em] text-zinc-600">
               HR Project
             </p>
-
           </div>
-
         </div>
       )}
 
-
       {/* CONTENT */}
       <div className="p-7">
-
         <div className="flex items-start justify-between gap-4">
-
           <div>
-
             <p className="mb-2 text-xs font-medium uppercase tracking-widest text-blue-500">
               {category}
             </p>
 
-            <h3 className="text-2xl font-semibold text-white">
-              {title}
-            </h3>
-
+            <h3 className="text-2xl font-semibold text-white">{title}</h3>
           </div>
 
-          <span className="text-sm font-medium text-zinc-600">
-            {number}
-          </span>
-
+          <span className="text-sm font-medium text-zinc-600">{number}</span>
         </div>
 
+        <p className="mt-4 leading-7 text-zinc-400">{description}</p>
 
-        <p className="mt-4 leading-7 text-zinc-400">
-          {description}
-        </p>
-
-
-        <p className="mt-6 text-sm leading-6 text-blue-400">
-          {technologies}
-        </p>
-
+        <p className="mt-6 text-sm leading-6 text-blue-400">{technologies}</p>
 
         {link !== "#" && (
           <a
@@ -550,13 +438,10 @@ function ProjectCard({
             View Project →
           </a>
         )}
-
       </div>
-
     </div>
   );
 }
-
 
 /* ========================================================= */
 /* INFORMATION CARD                                           */
@@ -571,15 +456,9 @@ function InfoCard({
 }) {
   return (
     <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-7 transition hover:border-blue-500/40">
+      <h3 className="text-xl font-semibold text-white">{title}</h3>
 
-      <h3 className="text-xl font-semibold text-white">
-        {title}
-      </h3>
-
-      <p className="mt-4 leading-7 text-zinc-400">
-        {description}
-      </p>
-
+      <p className="mt-4 leading-7 text-zinc-400">{description}</p>
     </div>
   );
 }
