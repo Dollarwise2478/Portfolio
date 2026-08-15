@@ -68,7 +68,7 @@ export default function Home() {
             </a>
 
             <a
-              href="/David-Uwaga-ACIPM-HRPL.pdf"
+              href="/David-Uwaga-Chigaemezu-ACIPM-HRPL.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border border-zinc-700 px-6 py-3 font-medium transition hover:border-zinc-500"
@@ -77,7 +77,7 @@ export default function Home() {
             </a>
 
             <a
-              href="/David-Uwaga-ACIPM-HRPL.pdf"
+              href="/David-Uwaga-Chigaemezu-ACIPM-HRPL.pdf"
               download
               className="rounded-full border border-zinc-700 px-6 py-3 font-medium transition hover:border-blue-500 hover:text-blue-400"
             >
@@ -178,7 +178,7 @@ export default function Home() {
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             {/* ================= PROJECT 01 ================= */}
             <ProjectCard
-              image="/HR-Analytics-Dashboard.png"
+              image="/hr-analytics-dashboard.png"
               number="01"
               title="HR Analytics Dashboard"
               category="People Analytics"
@@ -199,7 +199,7 @@ export default function Home() {
 
             {/* ================= PROJECT 03 ================= */}
             <ProjectCard
-              image="/BrightHR.png"
+              image="/brighthr.png"
               number="03"
               title="HR Digital Transformation"
               category="HR Technology"
@@ -258,6 +258,17 @@ export default function Home() {
               category="Organisation Design"
               description="A professional organisational structure visualisation designed to communicate reporting relationships, management hierarchy and organisational roles clearly and effectively."
               technologies="Organisation Design · Organisational Structure · Visual Communication"
+              link="#"
+            />
+
+            {/* ================= PROJECT 09 ================= */}
+            <ProjectCard
+              image="/hr-Process-Improvement.png"
+              number="09"
+              title="HR Process Improvement"
+              category="Organisation Design"
+              description="Identifying gaps in existing HR processes and developing practical systems, policies and technology-driven solutions."
+              technologies="HR Processes · Process Improvement · Organisational Development"
               link="#"
             />
           </div>
@@ -320,7 +331,7 @@ export default function Home() {
             </a>
 
             <a
-              href="/David-Uwaga-ACIPM-HRPL.pdf"
+              href="/David-Uwaga-Chigaemezu-ACIPM-HRPL.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border border-zinc-700 px-6 py-3 font-medium transition hover:border-blue-500 hover:text-blue-400"
@@ -350,7 +361,7 @@ export default function Home() {
             </a>
 
             <a
-              href="/David-Uwaga-ACIPM-HRPL.pdf"
+              href="/David-Uwaga-Chigaemezu-ACIPM-HRPL.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="transition hover:text-white"
