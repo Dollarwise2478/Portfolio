@@ -12,7 +12,7 @@ export default function Home() {
           </div>
 
           <div className="mt-1 text-xs font-medium tracking-wider text-blue-500">
-            ACIP · HRPL
+            ACIPM · HRPL
           </div>
         </div>
 
