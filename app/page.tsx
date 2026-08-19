@@ -43,7 +43,7 @@ export default function Home() {
       number: "04",
       title: "HR Policies & Governance",
       category: "HR Governance",
-      image: "/hr-policies.png",
+      image: "/hr-policies.jpg",
       description:
         "Development and enhancement of HR policies, procedures and governance frameworks designed to promote consistency, compliance, transparency and accountability.",
       technologies:
@@ -74,7 +74,7 @@ export default function Home() {
       number: "07",
       title: "Internal Newsletter",
       category: "Internal Communication",
-      image: "/newsletter.png",
+      image: "/Newsletter.png",
       description:
         "A professionally designed internal newsletter initiative developed to improve the quality, consistency and visual appeal of HR and organisational communications.",
       technologies:
@@ -85,7 +85,7 @@ export default function Home() {
       number: "08",
       title: "Organisational Structure & Organogram Design",
       category: "Organisational Development",
-      image: "/organogram-design.png",
+      image: "/Organogram-Design.png",
       description:
         "A multi-page organisational chart project designed to provide employees and management with a clear, professional and accessible view of the company's reporting structure.",
       technologies:
@@ -96,7 +96,7 @@ export default function Home() {
       number: "09",
       title: "HR Process Improvement",
       category: "HR Operations",
-      image: "/hr-process-improvement.png",
+      image: "/hr-Process-Improvement.png",
       description:
         "A collection of HR process improvement initiatives focused on leave management, attendance reporting, onboarding and operational efficiency.",
       technologies:
@@ -379,7 +379,7 @@ export default function Home() {
             </a>
 
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:chigaemezuuwaga@gmail.com"
               className="rounded-full border border-zinc-700 px-6 py-3 font-medium transition hover:border-blue-500 hover:text-blue-400"
             >
               Send Me an Email
