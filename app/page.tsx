@@ -80,7 +80,7 @@ const projects: Project[] = [
     number: "02",
     title: "Performance Appraisal Framework",
     category: "Performance Management",
-    image: "/appraisal-framework.png",
+    
 
     overview:
       "A structured performance management initiative focused on improving the consistency, efficiency and accuracy of the organisation's annual employee appraisal process.",
@@ -195,7 +195,7 @@ const projects: Project[] = [
     number: "04",
     title: "HR Policies & Governance",
     category: "HR Governance",
-    image: "/hr-policies.png",
+    image: "/hr-policies.jpg",
 
     overview:
       "A collection of HR policy development and governance initiatives designed to strengthen workplace standards, consistency, employee awareness and organisational compliance.",
@@ -251,7 +251,7 @@ const projects: Project[] = [
     number: "05",
     title: "HR Corner & Employee Communication",
     category: "Employee Engagement",
-    image: "/hr-corner.png",
+    
 
     overview:
       "An internal HR communication initiative created to improve employee awareness and understanding of workplace policies, procedures and important HR practices.",
@@ -295,7 +295,7 @@ const projects: Project[] = [
     number: "06",
     title: "Onboarding & Training Programme",
     category: "Learning & Development",
-    image: "/onboarding-training.png",
+    
 
     overview:
       "A structured onboarding and training initiative designed to improve the transition, integration and development of new employees.",
@@ -340,7 +340,7 @@ const projects: Project[] = [
     number: "07",
     title: "Internal Newsletter",
     category: "Internal Communication",
-    image: "/newsletter.png",
+    image: "//Newsletter.png",
 
     overview:
       "A visual communication transformation project that improved the design, consistency and professionalism of the organisation's internal newsletter.",
@@ -388,7 +388,7 @@ const projects: Project[] = [
     number: "08",
     title: "Organisational Structure & Organogram Design",
     category: "Organisational Development",
-    image: "/organogram-design.png",
+    image: "/Organogram-Design.png",
 
     overview:
       "A multi-page organisational structure redesign project developed to provide employees and management with a clear, professional and accessible representation of reporting relationships.",
@@ -438,7 +438,7 @@ const projects: Project[] = [
     number: "09",
     title: "HR Process Improvement",
     category: "Operational Excellence",
-    image: "/hr-process-improvement.png",
+    image: "/hr-Process-Improvement.png",
 
     overview:
       "A collection of HR process improvement initiatives focused on modernising administrative workflows, improving compliance and creating a more structured employee experience.",
